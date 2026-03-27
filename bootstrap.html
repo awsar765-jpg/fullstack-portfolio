@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo - Awasar Gurung</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; padding: 20px; }
+        .hero {
+            background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        .dashboard-card { transition: all 0.3s ease; }
+        .dashboard-card:hover { transform: translateY(-8px); }
+        .back-link { color: #003366; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="hero">
+            <h1>Bootstrap Demo</h1>
+            <p class="lead">Student Dashboard using Bootstrap 5</p>
+        </div>
+
+        <h2 class="mb-4">My Course Progress</h2>
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="card dashboard-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CET138</h5>
+                        <h3 class="text-primary">85%</h3>
+                        <p class="card-text">Full Stack Development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card dashboard-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Programming</h5>
+                        <h3 class="text-success">92%</h3>
+                        <p class="card-text">Fundamentals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card dashboard-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Database</h5>
+                        <h3 class="text-warning">78%</h3>
+                        <p class="card-text">Systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4">Quick Actions</h2>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-5">
+            <button class="btn btn-primary btn-lg me-2">View Assignments</button>
+            <button class="btn btn-success btn-lg me-2">Submit Project</button>
+            <button class="btn btn-info btn-lg">Check Grades</button>
+        </div>
+
+        <h2 class="mb-4">Recent Notices</h2>
+        <div class="alert alert-primary" role="alert">
+            <strong>New:</strong> Assignment 1 deadline extended to next week.
+        </div>
+        <div class="alert alert-success" role="alert">
+            <strong>Good News:</strong> Your last quiz score was 9/10!
+        </div>
+
+        <h2 class="mt-5 mb-4">Bootstrap Components Used</h2>
+        <ul class="list-group">
+            <li class="list-group-item">✓ Responsive Grid System</li>
+            <li class="list-group-item">✓ Cards with hover effects</li>
+            <li class="list-group-item">✓ Buttons and Button Groups</li>
+            <li class="list-group-item">✓ Alert Messages</li>
+            <li class="list-group-item">✓ Modern Dashboard Layout</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

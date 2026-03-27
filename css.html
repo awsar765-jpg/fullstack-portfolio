@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo - Awasar Gurung</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 850px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #003366; text-align: center; border-bottom: 3px solid #003366; padding-bottom: 15px; }
+        h2 { color: #003366; margin-top: 35px; }
+        .cards { display: flex; gap: 20px; margin: 25px 0; flex-wrap: wrap; }
+        .card { flex: 1; min-width: 260px; padding: 25px; background: white; border: 2px solid #003366; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.4s; }
+        .card:hover { transform: scale(1.05); box-shadow: 0 15px 25px rgba(0,51,102,0.3); }
+        .grid-demo { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 25px 0; }
+        .grid-item { background: #003366; color: white; padding: 30px; border-radius: 10px; text-align: center; font-weight: bold; }
+        .back-link { color: #003366; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>CSS Demo - Awasar Gurung</h1>
+
+        <section>
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is used to control the presentation, layout, and visual styling of HTML elements. It allows us to separate content from design.</p>
+        </section>
+
+        <h2>1. Hover Effect Cards</h2>
+        <div class="cards">
+            <div class="card"><h3>Frontend</h3><p>HTML + CSS + JavaScript</p></div>
+            <div class="card"><h3>Backend</h3><p>Server & Database</p></div>
+            <div class="card"><h3>Full Stack</h3><p>Complete Web Development</p></div>
+        </div>
+
+        <h2>2. CSS Grid Layout</h2>
+        <div class="grid-demo">
+            <div class="grid-item">Skill 1</div>
+            <div class="grid-item">Skill 2</div>
+            <div class="grid-item">Skill 3</div>
+            <div class="grid-item">Skill 4</div>
+        </div>
+
+        <h2>CSS Features Demonstrated</h2>
+        <ul>
+            <li>Flexbox and Grid Layout</li>
+            <li>Hover animations and transitions</li>
+            <li>Box Model (padding, border, margin, shadow)</li>
+            <li>Responsive design techniques</li>
+        </ul>
+    </div>
+</body>
+</html>
